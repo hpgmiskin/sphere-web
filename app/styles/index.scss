@@ -52,6 +52,7 @@ h6 {
     font-size: 26px;
   }
 }
+
 .features .h1 {
   padding-top: 50px;
 }
@@ -64,6 +65,32 @@ h6 {
 #features-header {
   padding-top: 20px;
 }
+
+@mixin rotate( $degrees ) {
+  -webkit-transform: rotate(#{$degrees}deg);
+  -moz-transform: rotate(#{$degrees}deg);
+  -ms-transform: rotate(#{$degrees}deg);
+  -o-transform: rotate(#{$degrees}deg);
+  transform: rotate(#{$degrees}deg);
+
+  filter:  progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)});
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)})";
+  zoom: 1;
+}
+
+#divider {
+  background-color: black;
+  color: black;
+
+  position: relative;
+  @include rotate(90);
+
+  width: 160px;
+  padding-top: 1px;
+  top: 60px;
+}
+
+
 
 /*Remove borders from bootstrap thumbnails*/
 .thumbnail {
