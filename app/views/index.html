@@ -1,6 +1,7 @@
+<!--Index page stylesheet-->
 <link rel="stylesheet" href="styles/index.css"/>
 
-<!--Intro -->
+<!--Intro-->
 <header class="intro">
   <div class="intro-body">
     <div class="container">
@@ -33,89 +34,37 @@
   <div class="container">
     <h1 id="features-header">Features</h1>
 
+
     <div class="row feature-row-1">
-      <div class="col-md-4">
+      <div class="col-md-4" ng-repeat="feature in featureList.slice(0 , 3)">
         <div class="thumbnail">
-          <img src="http://placehold.it/350x150" alt="...">
+          <img ng-src="{{feature.img_src}}" alt="...">
 
           <div class="caption">
-            <h3>Your Bills, unified</h3>
+            <h3>{{feature.title}}</h3>
 
-            <p>Look after your Phone,
-              Electricity, Gas and much
-              more in one simple App.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="thumbnail">
-          <img src="http://placehold.it/350x150" alt="...">
-
-          <div class="caption">
-            <h3>Analyze Your Bills</h3>
-
-            <p>Analyze your bills over time.
-              Spending too much on Electricity?
-              How much heating did you use in winter?
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="thumbnail">
-          <img src="http://placehold.it/350x150" alt="...">
-
-          <div class="caption">
-            <h3>Never miss a payment</h3>
-
-            <p>We'll make sure your kept up to date with all your bills.
-              You'll know exactly how long till your next payment.</p>
+            <p>{{feature.desc}}</p>
           </div>
         </div>
       </div>
     </div>
-
     <div class="row feature-row-2">
-      <div class="col-md-4">
+      <div class="col-md-4" ng-repeat="feature in featureList.slice(3 , 6)">
         <div class="thumbnail">
-          <img src="http://placehold.it/350x150" alt="...">
+          <img ng-src="{{feature.img_src}}" alt="...">
 
           <div class="caption">
-            <h3>Split Bills</h3>
+            <h3>{{feature.title}}</h3>
 
-            <p>Easily split bills between house mates and receive payments from
-              housemates.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="thumbnail">
-          <img src="http://placehold.it/350x150" alt="...">
-
-          <div class="caption">
-            <h3>Save on Your Bills</h3>
-
-            <p>Automatically compare providers and easily switch to the cheapest
-              providers.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="thumbnail">
-          <img src="http://placehold.it/350x150" alt="...">
-
-          <div class="caption">
-            <h3>Get Accurate Bills</h3>
-
-            <p>Submit meter readings to your provider for more accurate bills</p>
+            <p>{{feature.desc}}</p>
           </div>
         </div>
       </div>
     </div>
+
   </div>
 </section>
+
 <!-- Footer -->
 <footer id="page-footer" class="footer">
   <hr>
