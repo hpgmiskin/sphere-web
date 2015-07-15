@@ -1,12 +1,22 @@
-# sphere
+# Sphere Web
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.12.1.
+Sphere web is the informative website for the Sphere app
 
-## Build & development
+## Installation
 
-Run `grunt` for building and `grunt serve` for preview.
+To install the packages required the following commands must be run
+
+1. Install Node modules using `npm install`
+2. Install Bower components using `bower install`
+
+## Development
+
+To serve a local version of sphere-web run `grunt serve`
 
 ## Testing
 
-Running `grunt test` will run the unit tests with karma.
+To test sphere-web run `grunt test`
+
+## Deployment
+
+To package the code into distribution folder (dist) run `grunt build`

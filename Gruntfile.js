@@ -16,7 +16,8 @@ module.exports = function (grunt) {
   require('jit-grunt')(grunt, {
     useminPrepare: 'grunt-usemin',
     ngtemplates: 'grunt-angular-templates',
-    cdnify: 'grunt-google-cdn'
+    cdnify: 'grunt-google-cdn',
+    injector: 'grunt-injector'
   });
 
   // Configurable paths for the application
@@ -176,6 +177,18 @@ module.exports = function (grunt) {
           src: '{,*/}*.css',
           dest: '.tmp/styles/'
         }]
+      }
+    },
+
+    // Automatically inject javascript into app
+    injector: {
+      options: {
+        ignorePath: 'app/'
+      },
+      local_dependencies: {
+        files: {
+          'app/index.html': ['app/**/*.js', 'app/**/*.css'],
+        }
       }
     },
 
@@ -450,6 +463,7 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'wiredep',
+      'injector',
       'concurrent:server',
       'autoprefixer:server',
       'connect:livereload',
@@ -465,6 +479,7 @@ module.exports = function (grunt) {
   grunt.registerTask('test', [
     'clean:server',
     'wiredep',
+    'injector',
     'concurrent:test',
     'autoprefixer',
     'connect:test',
@@ -474,6 +489,7 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'wiredep',
+    'injector',
     'useminPrepare',
     'concurrent:dist',
     'autoprefixer',
