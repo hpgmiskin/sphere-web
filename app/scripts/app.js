@@ -2,27 +2,23 @@
 
 /**
  * @ngdoc overview
- * @name webApp
+ * @name sphereApp
  * @description
- * # webApp
+ * # sphereApp
  *
  * Main module of the application.
  */
 angular
-  .module('webApp', [
-    'ngAnimate',
-    'ngCookies',
-    'ngResource',
+  .module('sphereApp', [
     'ngRoute',
-    'ngSanitize',
-    'ngTouch'
+    'ngSanitize'
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/index.html',
-        controller: 'IndexCtrl',
-        controllerAs: 'index'
+        templateUrl: 'views/main.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
       })
       .otherwise({
         redirectTo: '/'
