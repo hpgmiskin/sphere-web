@@ -8,7 +8,7 @@
  * Controller of the sphereApp
  */
 angular.module('sphereApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('MainCtrl',['$scope', '$location', '$anchorScroll', function ($scope, $location, $anchorScroll) {
     /*List of features*/
     $scope.featureList = [
       {
@@ -44,4 +44,10 @@ angular.module('sphereApp')
         "img_src": "../images/index/Oval_1_Shape.png"
       }
     ];
-  });
+
+    $scope.goToSection = function(section) {
+      console.log(section);
+      $location.hash(section);
+      $anchorScroll();
+    };
+  }]);

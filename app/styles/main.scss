@@ -36,17 +36,6 @@ body {
   padding: 0.2em 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0 0 35px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
 .intro {
   display: table;
   width: 100%;
@@ -86,6 +75,14 @@ h6 {
   line-height: 22px;
 }
 
+div#sign-up{
+  margin-top: 20px;
+}
+label#email-label{
+  text-align: left;
+}
+
+
 #iphone-img {
   width: 85%;
   height: 50%;
@@ -98,6 +95,10 @@ h6 {
   width: 100px;
   height: 100px;
   float: left;
+}
+
+p#scroll-down{
+  color: #ffffff;
 }
 
 //

@@ -16,10 +16,12 @@
           </div>
 
           <!--Sign up form-->
-          <label id="email-label">Be the first to get Sphere</label>
 
-          <!-- Mailchimp Signup -->
-          <div mailchimp size="'sm'"></div>
+          <div class="col-md-8 col-md-offset-4" id="sign-up">
+            <label id="email-label">Be the first to get Sphere:</label>
+            <!-- Mailchimp Signup -->
+            <div mailchimp size="'sm'"></div>
+          </div>
 
         </div>
 
@@ -29,9 +31,9 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <div id="scroll-down-link">
-            <a href="#features" class="btn btn-circle page-scroll">
-              <p>Scroll down</p>
+          <div>
+            <a ng-click="goToSection('features')" class="btn btn-circle page-scroll">
+              <p id="scroll-down">Scroll down</p>
               <img src="../images/index/ScrollDownIcon.png">
             </a>
           </div>
@@ -40,7 +42,6 @@
     </div>
   </div>
 </header>
-
 <!--Features-->
 <section id="features">
   <div class="container">
