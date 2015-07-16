@@ -36,6 +36,10 @@ body {
   padding: 0.2em 0;
 }
 
+/**********************************
+INTRO SECTION
+***********************************/
+
 .intro {
   display: table;
   width: 100%;
@@ -69,22 +73,41 @@ body {
   line-height: 29px;
 }
 
-#email-label {
-  /* Be the first to get : */
-  font-size: 18px;
-  line-height: 22px;
-}
-
 div#sign-up{
   margin-top: 20px;
 }
+
 label#email-label{
+  /* Be the first to get : */
   text-align: left;
+  font-family: Montserrat-Regular;
+  font-size: 18px;
+  color: #FFFFFF;
+  line-height: 22px;
+  text-shadow: 0px 8px 17px rgba(0,0,0,0.20);
+  text-shadow: 0px 1px 4px rgba(0,0,0,0.50);
 }
 
+input#mc-embedded-subscribe{
+  background: #85DE76;
+}
+
+input#mce-EMAIL{
+  /* EmailFormElement: */
+  background: #FFFFFF;
+  border-radius: 3px 0px 0px 3px;
+
+  /* SignUpButtonText: */
+  opacity: 0.70;
+  font-family: Montserrat-Regular;
+  font-size: 11.47px;
+  color: #FFFFFF;
+  line-height: 14px;
+
+}
 
 #iphone-img {
-  width: 85%;
+  width: 65%;
   height: 50%;
   position: relative;
   bottom: 0;
@@ -101,40 +124,45 @@ p#scroll-down{
   color: #ffffff;
 }
 
-//
-//#logo .h1 {
-//  position: relative;
-//  top: 18px;
-//  left: 10px;
-//}
-
 @media(min-width: 768px) {
   .intro {
     height: 100vh;
     padding: 0;
   }
-
-  .intro .intro-body .brand-heading {
-    font-size: 100px;
-  }
-
-  .intro .intro-body .intro-text {
-    font-size: 26px;
-  }
 }
 
-.features .h1 {
-  padding-top: 50px;
+
+
+/**********************************
+FEATURES SECTION
+***********************************/
+
+/*Remove borders from bootstrap thumbnails*/
+.thumbnail {
+  border: 0 none;
+  box-shadow: none;
 }
 
-#page-footer {
-  min-height: 200px;
-  background-color: #00FFFF;
+
+#features{
+  /* Features: */
+  font-family: Montserrat-Bold;
+  font-size: 36px;
+  color: #4A4A4A;
+  line-height: 44px;
 }
 
-#features-header {
-  padding-top: 20px;
-}
+//.features .h1 {
+//  padding-top: 50px;
+//}
+//#features-header {
+//  padding-top: 20px;
+//}
+
+/**********************************
+FOOTER
+***********************************/
+
 
 @mixin rotate( $degrees ) {
   -webkit-transform: rotate(#{$degrees}deg);
@@ -148,6 +176,13 @@ p#scroll-down{
   zoom: 1;
 }
 
+#page-footer {
+  min-height: 200px;
+  background-color: #00FFFF;
+}
+
+
+/*Vertical hr tag*/
 #divider {
   background-color: black;
   color: black;
@@ -158,10 +193,4 @@ p#scroll-down{
   width: 160px;
   padding-top: 1px;
   top: 60px;
-}
-
-/*Remove borders from bootstrap thumbnails*/
-.thumbnail {
-  border: 0 none;
-  box-shadow: none;
 }

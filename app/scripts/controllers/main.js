@@ -8,19 +8,21 @@
  * Controller of the sphereApp
  */
 angular.module('sphereApp')
-  .controller('MainCtrl',['$scope', '$location', '$anchorScroll', function ($scope, $location, $anchorScroll) {
+  .controller('MainCtrl', ['$scope', '$location', '$anchorScroll', function ($scope, $location, $anchorScroll) {
     /*List of features*/
     $scope.featureList = [
       {
         "title": "Your Bills, unified",
         "desc": "Look after your Phone, Electricity, Gas and much \nmore in one simple App.",
-        "img_src": "../images/index/BillsIcon@1x.png"
+        "img_src": "../images/index/BillsIcon@1x.png",
+        "style": "font-family: Montserrat-Bold; font-size: 24px;color: #4A4A4A; line-height: 29px;"
       },
       {
         "title": "Analyze Your Bills",
         "desc": "Analyze your bills over time.\nSpending too much on Electricity?" +
         "How much heating did you use in winter?",
-        "img_src": "../images/index/AnalyzeIcon.png"
+        "img_src": "../images/index/AnalyzeIcon.png",
+        "style": " "
       },
       {
         "title": "Never miss a payment",
@@ -45,8 +47,8 @@ angular.module('sphereApp')
       }
     ];
 
-    $scope.goToSection = function(section) {
-      console.log(section);
+    /*Scroll to section id*/
+    $scope.goToSection = function (section) {
       $location.hash(section);
       $anchorScroll();
     };
