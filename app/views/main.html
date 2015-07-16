@@ -25,7 +25,7 @@
 
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 hidden-xs">
           <img id="iphone-img" src="../images/index/iPhoneTempMockup.png">
         </div>
       </div>
@@ -49,7 +49,7 @@
 
 
     <div class="row">
-      <div class="col-md-4" ng-repeat="feature in featureList">
+      <div class="col-md-4 col-sm-3" ng-repeat="feature in featureList">
         <div class="thumbnail">
           <img ng-src="{{feature.img_src}}" alt="...">
 
@@ -69,18 +69,17 @@
   <hr>
   <div class="container">
     <div class="row">
-      <div class="col-xs-4">
+      <div class="col-md-5">
 
         <label class="label-join-sphere">Be the first to get Sphere</label>
 
         <div id="form-sign-up" mailchimp size="'sm'"></div>
 
       </div>
-      <div class="col-xs-2">
+      <div class="col-md-2 hidden-xs">
         <hr id="divider">
       </div>
-
-      <div class="col-xs-4 col-xs-offset-2">
+      <div class="col-md-5">
         <img
           alt="follow us on facebook"
           src="../images/index/FacebookIcon.png">
@@ -88,7 +87,6 @@
            href="https://www.facebook.com/sphereapp">
           Follow us on Facebook
         </a>
-
       </div>
     </div>
   </div>
