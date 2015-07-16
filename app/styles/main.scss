@@ -3,6 +3,31 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+html {
+  width: 100%;
+  height: 100%;
+}
+
+
+body {
+  width: 100%;
+  height: 100%;
+
+  /*Fonts*/
+  @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+  @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+
+  font-family: Montserrat, Open-Sans, Helvetica, Arial, sans-serif;
+  background-color: white;
+
+  /* 	Default shadow settings
+	two sets of shadows, both of them applied */
+  text-shadow: 0px 8px 17px rgba(0, 0, 0, 0.20);
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.50);
+
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -10,17 +35,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   padding: 0.2em 0;
 }
 
-body {
-  width: 100%;
-  height: 100%;
-  font-family: Lora, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: white;
-}
-
-html {
-  width: 100%;
-  height: 100%;
-}
 
 h1,
 h2,
@@ -29,7 +43,7 @@ h4,
 h5,
 h6 {
   margin: 0 0 35px;
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Montserrat, Open-Sans, Helvetica, Arial, sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -54,12 +68,54 @@ h6 {
   vertical-align: middle;
 }
 
-.intro .intro-body .brand-heading {
-  font-size: 40px;
+#main-title {
+  /* Sphere Main Title: */
+  font-family: Montserrat-Bold;
+  font-size: 92px;
+  color: #FFFFFF;
+  line-height: 112px;
+  text-shadow: 0px 8px 17px rgba(0,0,0,0.20);
+  text-shadow: 0px 1px 4px rgba(0,0,0,0.50);
 }
 
-.intro .intro-body .intro-text {
+#title-phrase{
+  /* Bills. Made Simple: */
+  font-family: Montserrat-Regular;
+  font-size: 24px;
+  color: #FFFFFF;
+  line-height: 29px;
+  text-shadow: 0px 8px 17px rgba(0,0,0,0.20);
+  text-shadow: 0px 1px 4px rgba(0,0,0,0.50);
+}
+
+#email-label{
+  /* Be the first to get : */
+  font-family: Montserrat-Regular;
   font-size: 18px;
+  color: #FFFFFF;
+  line-height: 22px;
+  text-shadow: 0px 8px 17px rgba(0,0,0,0.20);
+  text-shadow: 0px 1px 4px rgba(0,0,0,0.50);
+
+}
+#iphone-img {
+  width: 85%;
+  height: 50%;
+  position:relative;
+  bottom: 0;
+  right: 0;
+}
+
+#logo .img {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+#logo .h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
 }
 
 @media(min-width: 768px) {
