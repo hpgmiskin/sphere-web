@@ -8,7 +8,6 @@ html {
   height: 100%;
 }
 
-
 body {
   width: 100%;
   height: 100%;
@@ -16,7 +15,6 @@ body {
   /*Fonts*/
   @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
   @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-
 
   font-family: Montserrat, Open-Sans, Helvetica, Arial, sans-serif;
   background-color: white;
@@ -34,7 +32,6 @@ body {
   color: #000;
   padding: 0.2em 0;
 }
-
 
 h1,
 h2,
@@ -74,49 +71,51 @@ h6 {
   font-size: 92px;
   color: #FFFFFF;
   line-height: 112px;
-  text-shadow: 0px 8px 17px rgba(0,0,0,0.20);
-  text-shadow: 0px 1px 4px rgba(0,0,0,0.50);
+  text-shadow: 0px 8px 17px rgba(0, 0, 0, 0.20);
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.50);
 }
 
-#title-phrase{
+#title-phrase {
   /* Bills. Made Simple: */
   font-family: Montserrat-Regular;
   font-size: 24px;
   color: #FFFFFF;
   line-height: 29px;
-  text-shadow: 0px 8px 17px rgba(0,0,0,0.20);
-  text-shadow: 0px 1px 4px rgba(0,0,0,0.50);
+  text-shadow: 0px 8px 17px rgba(0, 0, 0, 0.20);
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.50);
 }
 
-#email-label{
+#email-label {
   /* Be the first to get : */
   font-family: Montserrat-Regular;
   font-size: 18px;
   color: #FFFFFF;
   line-height: 22px;
-  text-shadow: 0px 8px 17px rgba(0,0,0,0.20);
-  text-shadow: 0px 1px 4px rgba(0,0,0,0.50);
+  text-shadow: 0px 8px 17px rgba(0, 0, 0, 0.20);
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.50);
 
 }
+
 #iphone-img {
   width: 85%;
   height: 50%;
-  position:relative;
+  position: relative;
   bottom: 0;
   right: 0;
 }
 
-#logo .img {
-  float: left;
+#logo {
   width: 100px;
   height: 100px;
+  float: left;
 }
 
-#logo .h1 {
-  position: relative;
-  top: 18px;
-  left: 10px;
-}
+//
+//#logo .h1 {
+//  position: relative;
+//  top: 18px;
+//  left: 10px;
+//}
 
 @media(min-width: 768px) {
   .intro {
