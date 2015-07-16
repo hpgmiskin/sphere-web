@@ -44,25 +44,12 @@
     <h1 id="features-header">Features</h1>
 
 
-    <div class="row feature-row-1">
-      <div class="col-md-4" ng-repeat="feature in featureList.slice(0 , 3)">
+    <div class="row">
+      <div class="col-md-4" ng-repeat="feature in featureList">
         <div class="thumbnail">
           <img ng-src="{{feature.img_src}}" alt="...">
 
-          <div class="caption">
-            <h3>{{feature.title}}</h3>
-
-            <p>{{feature.desc}}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row feature-row-2">
-      <div class="col-md-4" ng-repeat="feature in featureList.slice(3 , 6)">
-        <div class="thumbnail">
-          <img ng-src="{{feature.img_src}}" alt="...">
-
-          <div class="caption">
+          <div class="caption text-center">
             <h3>{{feature.title}}</h3>
 
             <p>{{feature.desc}}</p>
