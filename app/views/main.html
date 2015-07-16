@@ -18,7 +18,7 @@
           <!--Sign up form-->
 
           <div class="col-md-8 col-md-offset-4" id="sign-up">
-            <label id="email-label">Be the first to get Sphere:</label>
+            <label class="label-join-sphere">Be the first to get Sphere:</label>
             <!-- Mailchimp Signup -->
             <div mailchimp size="'sm'"></div>
           </div>
@@ -53,7 +53,7 @@
         <div class="thumbnail">
           <img ng-src="{{feature.img_src}}" alt="...">
 
-          <div class="caption text-center" style="{{feature.style}}">
+          <div class="caption text-center">
             <h3>{{feature.title}}</h3>
             <p>{{feature.desc}}</p>
           </div>
@@ -71,7 +71,7 @@
     <div class="row">
       <div class="col-xs-4">
 
-        <h1 id="">Be the first to get Sphere</h1>
+        <label class="label-join-sphere">Be the first to get Sphere</label>
 
         <div id="form-sign-up" mailchimp size="'sm'"></div>
 
@@ -81,11 +81,12 @@
       </div>
 
       <div class="col-xs-4 col-xs-offset-2">
-        <a target="_blank" title="follow me on facebook"
-           href="https://www.facebook.com/sphereapp"><img
+        <img
           alt="follow us on facebook"
           src="../images/index/FacebookIcon.png">
-          Join us on facebook
+        <a target="_blank" title="follow me on facebook"
+           href="https://www.facebook.com/sphereapp">
+          Follow us on Facebook
         </a>
 
       </div>

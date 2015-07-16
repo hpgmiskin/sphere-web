@@ -115,8 +115,8 @@ input#mce-EMAIL{
 }
 
 #logo {
-  width: 100px;
-  height: 100px;
+  width: 20%;
+  height: 100%;
   float: left;
 }
 
@@ -152,12 +152,18 @@ FEATURES SECTION
   line-height: 44px;
 }
 
-//.features .h1 {
-//  padding-top: 50px;
-//}
-//#features-header {
-//  padding-top: 20px;
-//}
+#feature .h3{
+  font-family: Montserrat-Bold;
+  font-size: 24px;
+  color: #4A4A4A;
+  line-height: 29px;
+}
+#features .caption{
+  font-family: OpenSans;
+  font-size: 18px;
+  color: #4A4A4A;
+  line-height: 24px;
+}
 
 /**********************************
 FOOTER
@@ -178,14 +184,19 @@ FOOTER
 
 #page-footer {
   min-height: 200px;
-  background-color: #00FFFF;
+  background-color: #4B8EE6;
+}
+
+#page-footer a{
+  color: #ffffff;
+  padding: 10px;
 }
 
 
 /*Vertical hr tag*/
 #divider {
-  background-color: black;
-  color: black;
+  background-color: #76CAFB;
+  //color: #76CAFB;
 
   position: relative;
   @include rotate(90);

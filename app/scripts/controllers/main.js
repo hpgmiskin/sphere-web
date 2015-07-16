@@ -14,15 +14,13 @@ angular.module('sphereApp')
       {
         "title": "Your Bills, unified",
         "desc": "Look after your Phone, Electricity, Gas and much \nmore in one simple App.",
-        "img_src": "../images/index/BillsIcon@1x.png",
-        "style": "font-family: Montserrat-Bold; font-size: 24px;color: #4A4A4A; line-height: 29px;"
+        "img_src": "../images/index/BillsIcon@1x.png"
       },
       {
         "title": "Analyze Your Bills",
         "desc": "Analyze your bills over time.\nSpending too much on Electricity?" +
-        "How much heating did you use in winter?",
-        "img_src": "../images/index/AnalyzeIcon.png",
-        "style": " "
+        " How much heating did you use in winter?",
+        "img_src": "../images/index/AnalyzeIcon.png"
       },
       {
         "title": "Never miss a payment",
@@ -46,7 +44,6 @@ angular.module('sphereApp')
         "img_src": "../images/index/Oval_1_Shape.png"
       }
     ];
-
     /*Scroll to section id*/
     $scope.goToSection = function (section) {
       $location.hash(section);
