@@ -7,7 +7,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
-
 html {
   width: 100%;
   height: 100%;
@@ -73,26 +72,26 @@ INTRO SECTION
   line-height: 29px;
 }
 
-div#sign-up{
+div#sign-up {
   margin-top: 20px;
 }
 
-label#email-label{
+label#email-label {
   /* Be the first to get : */
   text-align: left;
   font-family: Montserrat-Regular;
   font-size: 18px;
   color: #FFFFFF;
   line-height: 22px;
-  text-shadow: 0px 8px 17px rgba(0,0,0,0.20);
-  text-shadow: 0px 1px 4px rgba(0,0,0,0.50);
+  text-shadow: 0px 8px 17px rgba(0, 0, 0, 0.20);
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.50);
 }
 
-input#mc-embedded-subscribe{
+input#mc-embedded-subscribe {
   background: #85DE76;
 }
 
-input#mce-EMAIL{
+input#mce-EMAIL {
   /* EmailFormElement: */
   background: #FFFFFF;
   border-radius: 3px 0px 0px 3px;
@@ -120,7 +119,7 @@ input#mce-EMAIL{
   float: left;
 }
 
-p#scroll-down{
+p#scroll-down {
   color: #ffffff;
 }
 
@@ -130,8 +129,6 @@ p#scroll-down{
     padding: 0;
   }
 }
-
-
 
 /**********************************
 FEATURES SECTION
@@ -143,8 +140,7 @@ FEATURES SECTION
   box-shadow: none;
 }
 
-
-#features{
+#features {
   /* Features: */
   font-family: Montserrat-Bold;
   font-size: 36px;
@@ -152,13 +148,14 @@ FEATURES SECTION
   line-height: 44px;
 }
 
-#feature .h3{
+#feature .h3 {
   font-family: Montserrat-Bold;
   font-size: 24px;
   color: #4A4A4A;
   line-height: 29px;
 }
-#features .caption{
+
+#features .caption {
   font-family: OpenSans;
   font-size: 18px;
   color: #4A4A4A;
@@ -168,7 +165,6 @@ FEATURES SECTION
 /**********************************
 FOOTER
 ***********************************/
-
 
 @mixin rotate( $degrees ) {
   -webkit-transform: rotate(#{$degrees}deg);
@@ -187,11 +183,14 @@ FOOTER
   background-color: #4B8EE6;
 }
 
-#page-footer a{
+#page-footer a {
   color: #ffffff;
   padding: 10px;
 }
 
+#page-footer .col-md-5 {
+  margin-top: 5%;
+}
 
 /*Vertical hr tag*/
 #divider {
