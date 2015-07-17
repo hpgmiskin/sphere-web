@@ -38,37 +38,71 @@ INTRO SECTION
 ***********************************/
 
 .intro {
-  display: table;
-  width: 100%;
-  height: auto;
-  padding: 100px 0;
+  // display: table;
+  // width: 100%;
+  height: 100vh;
+  padding: auto;
   text-align: center;
   color: #fff;
+
   background: url('../images/index/tempImageBlurred.png') no-repeat bottom center scroll;
   background-color: #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.50);
 }
 
-.intro .intro-body {
-  display: table-cell;
-  vertical-align: middle;
+.img-logo {
+  width: 20%;
+  height: 100%;
+  float: left;
 }
 
-#main-title {
-  /* Sphere Main Title: */
-  font-weight: 700;
-  font-size: 92px;
-  line-height: 112px;
+.title {
+  position: relative;
+  display: inline-block;
+
+  .name {
+    font-size: 60px;
+    font-weight: 700;
+    // line-height: 112px;
+
+    padding: 10px 0;
+  }
+
+  .phrase {
+    font-size: 15px;
+    // line-height: 29px;
+
+    position: absolute;
+    right:  0;
+    bottom: -10px;
+  }
 }
 
-#title-phrase {
-  /* Bills. Made Simple: */
-  font-size: 24px;
-  line-height: 29px;
+@media(max-device-width: 480px) {
+  .title {
+    .name {
+      font-size: 40px;
+    }
+    .phrase {
+      font-size: 10px;
+    }
+  }
+}
+
+@media(min-width: 768px) {
+  .title {
+    .name {
+      font-size: 80px;
+    }
+    .phrase {
+      font-size: 20px;
+    }
+  }
 }
 
 div#sign-up {
@@ -109,21 +143,8 @@ input#mce-EMAIL {
   right: 0;
 }
 
-.img-logo {
-  width: 20%;
-  height: 100%;
-  float: left;
-}
-
 p#scroll-down {
   color: #ffffff;
-}
-
-@media(min-width: 768px) {
-  .intro {
-    height: 100vh;
-    padding: 0;
-  }
 }
 
 /**********************************
