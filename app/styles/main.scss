@@ -3,29 +3,27 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+/*Fonts*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
 html {
   width: 100%;
   height: 100%;
 }
 
-
 body {
   width: 100%;
   height: 100%;
 
-  /*Fonts*/
-  @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-  @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-
-
-  font-family: Montserrat, Open-Sans, Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #fff;
   background-color: white;
 
   /* 	Default shadow settings
 	two sets of shadows, both of them applied */
-  text-shadow: 0px 8px 17px rgba(0, 0, 0, 0.20);
-  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.50);
-
+//  text-shadow: 0px 8px 17px rgba(0, 0, 0, 0.20);
 }
 
 .browsehappy {
@@ -35,18 +33,9 @@ body {
   padding: 0.2em 0;
 }
 
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0 0 35px;
-  font-family: Montserrat, Open-Sans, Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
+/**********************************
+INTRO SECTION
+***********************************/
 
 .intro {
   display: table;
@@ -61,6 +50,7 @@ h6 {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.50);
 }
 
 .intro .intro-body {
@@ -70,52 +60,63 @@ h6 {
 
 #main-title {
   /* Sphere Main Title: */
-  font-family: Montserrat-Bold;
+  font-weight: 700;
   font-size: 92px;
-  color: #FFFFFF;
   line-height: 112px;
-  text-shadow: 0px 8px 17px rgba(0,0,0,0.20);
-  text-shadow: 0px 1px 4px rgba(0,0,0,0.50);
 }
 
-#title-phrase{
+#title-phrase {
   /* Bills. Made Simple: */
-  font-family: Montserrat-Regular;
   font-size: 24px;
-  color: #FFFFFF;
   line-height: 29px;
-  text-shadow: 0px 8px 17px rgba(0,0,0,0.20);
-  text-shadow: 0px 1px 4px rgba(0,0,0,0.50);
 }
 
-#email-label{
+div#sign-up {
+  margin-top: 20px;
+}
+
+label#email-label {
   /* Be the first to get : */
+  text-align: left;
   font-family: Montserrat-Regular;
   font-size: 18px;
   color: #FFFFFF;
   line-height: 22px;
-  text-shadow: 0px 8px 17px rgba(0,0,0,0.20);
-  text-shadow: 0px 1px 4px rgba(0,0,0,0.50);
-
+  text-shadow: 0px 8px 17px rgba(0, 0, 0, 0.20);
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.50);
 }
+
+input#mc-embedded-subscribe {
+  background: #85DE76;
+}
+
+input#mce-EMAIL {
+  /* EmailFormElement: */
+  background: #FFFFFF;
+  border-radius: 3px 0px 0px 3px;
+
+  /* SignUpButtonText: */
+  opacity: 0.70;
+  color: #FFFFFF;
+  line-height: 14px;
+}
+
 #iphone-img {
-  width: 85%;
+  width: 65%;
   height: 50%;
-  position:relative;
+  position: relative;
   bottom: 0;
   right: 0;
 }
 
-#logo .img {
+.img-logo {
+  width: 20%;
+  height: 100%;
   float: left;
-  width: 100px;
-  height: 100px;
 }
 
-#logo .h1 {
-  position: relative;
-  top: 18px;
-  left: 10px;
+p#scroll-down {
+  color: #ffffff;
 }
 
 @media(min-width: 768px) {
@@ -123,28 +124,44 @@ h6 {
     height: 100vh;
     padding: 0;
   }
-
-  .intro .intro-body .brand-heading {
-    font-size: 100px;
-  }
-
-  .intro .intro-body .intro-text {
-    font-size: 26px;
-  }
 }
 
-.features .h1 {
-  padding-top: 50px;
+/**********************************
+FEATURES SECTION
+***********************************/
+
+/*Remove borders from bootstrap thumbnails*/
+.thumbnail {
+  border: 0 none;
+  box-shadow: none;
 }
 
-#page-footer {
-  min-height: 200px;
-  background-color: #00FFFF;
+#features {
+  /* Features: */
+//  font-family: Montserrat-Bold;
+  font-weight: 700;
+  font-size: 36px;
+  color: #4A4A4A;
+  line-height: 44px;
 }
 
-#features-header {
-  padding-top: 20px;
+#feature .h3 {
+  //font-family: Montserrat-Bold;
+  font-size: 24px;
+  color: #4A4A4A;
+  line-height: 29px;
 }
+
+#features .caption {
+  //font-family: OpenSans;
+  font-size: 18px;
+  color: #4A4A4A;
+  line-height: 24px;
+}
+
+/**********************************
+FOOTER
+***********************************/
 
 @mixin rotate( $degrees ) {
   -webkit-transform: rotate(#{$degrees}deg);
@@ -158,9 +175,25 @@ h6 {
   zoom: 1;
 }
 
+#page-footer {
+  min-height: 200px;
+  background-color: #4B8EE6;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.50);
+}
+
+#page-footer a {
+  color: #ffffff;
+  padding: 10px;
+}
+
+#page-footer .col-md-5 {
+  margin-top: 5%;
+}
+
+/*Vertical hr tag*/
 #divider {
-  background-color: black;
-  color: black;
+  background-color: #76CAFB;
+  //color: #76CAFB;
 
   position: relative;
   @include rotate(90);
@@ -168,10 +201,4 @@ h6 {
   width: 160px;
   padding-top: 1px;
   top: 60px;
-}
-
-/*Remove borders from bootstrap thumbnails*/
-.thumbnail {
-  border: 0 none;
-  box-shadow: none;
 }

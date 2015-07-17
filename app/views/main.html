@@ -1,3 +1,5 @@
+<div ng-include src="'../views/nav-bar.html'"></div>
+
 <!--Intro-->
 <header class="intro">
   <div class="intro-body">
@@ -8,63 +10,53 @@
         <div class="col-md-8">
           <!--Logo-->
 
-          <div id="logo">
-            <img src="../images/index/Logo1Temp.png">
+          <div>
+            <img class="img-logo" src="../images/index/Logo1Temp.png">
 
             <h2 id="main-title">Sphere</h2>
             <h4 id="title-phrase">Bills. Made simple</h4>
           </div>
 
           <!--Sign up form-->
-          <label id="email-label">Be the first to get Sphere</label>
 
-          <!-- Mailchimp Signup -->
-          <div mailchimp size="'sm'"></div>
+          <div class="col-md-8 col-md-offset-4" id="sign-up">
+            <label class="label-join-sphere">Be the first to get Sphere:</label>
+            <!-- Mailchimp Signup -->
+            <div mailchimp size="'sm'"></div>
+          </div>
 
+        </div>
 
-          <div id="scroll-down-link">
-            <a href="#features" class="btn btn-circle page-scroll">
-              <p>Scroll down</p>
+        <div class="col-md-4 visible-md visible-lg">
+          <img id="iphone-img" src="../images/index/iPhoneTempMockup.png">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div>
+            <a ng-click="goToSection('features')" class="btn btn-circle page-scroll">
+              <p id="scroll-down">Scroll down</p>
               <img src="../images/index/ScrollDownIcon.png">
             </a>
           </div>
-        </div>
-
-        <div class="col-md-4">
-          <img id="iphone-img" src="../images/index/iPhoneTempMockup.png">
         </div>
       </div>
     </div>
   </div>
 </header>
-
 <!--Features-->
 <section id="features">
   <div class="container">
     <h1 id="features-header">Features</h1>
 
 
-    <div class="row feature-row-1">
-      <div class="col-md-4" ng-repeat="feature in featureList.slice(0 , 3)">
+    <div class="row">
+      <div class="col-md-4 col-sm-6" ng-repeat="feature in featureList">
         <div class="thumbnail">
           <img ng-src="{{feature.img_src}}" alt="...">
 
-          <div class="caption">
+          <div class="caption text-center">
             <h3>{{feature.title}}</h3>
-
-            <p>{{feature.desc}}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row feature-row-2">
-      <div class="col-md-4" ng-repeat="feature in featureList.slice(3 , 6)">
-        <div class="thumbnail">
-          <img ng-src="{{feature.img_src}}" alt="...">
-
-          <div class="caption">
-            <h3>{{feature.title}}</h3>
-
             <p>{{feature.desc}}</p>
           </div>
         </div>
@@ -79,25 +71,24 @@
   <hr>
   <div class="container">
     <div class="row">
-      <div class="col-xs-4">
+      <div class="col-md-5">
 
-        <h1 id="">Be the first to get Sphere</h1>
+        <label class="label-join-sphere">Be the first to get Sphere</label>
 
-        <div mailchimp size="'sm'"></div>
+        <div id="form-sign-up" mailchimp size="'sm'"></div>
 
       </div>
-      <div class="col-xs-2">
+      <div class="col-md-2 hidden-xs hidden-sm">
         <hr id="divider">
       </div>
-
-      <div class="col-xs-4 col-xs-offset-2">
-        <a target="_blank" title="follow me on facebook"
-           href="https://www.facebook.com/sphereapp"><img
+      <div class="col-md-5">
+        <img
           alt="follow us on facebook"
           src="../images/index/FacebookIcon.png">
-          Join us on facebook
+        <a target="_blank" title="follow me on facebook"
+           href="https://www.facebook.com/sphereapp">
+          Follow us on Facebook
         </a>
-
       </div>
     </div>
   </div>

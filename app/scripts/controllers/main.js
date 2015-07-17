@@ -8,7 +8,7 @@
  * Controller of the sphereApp
  */
 angular.module('sphereApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('MainCtrl', ['$scope', '$location', '$anchorScroll', function ($scope, $location, $anchorScroll) {
     /*List of features*/
     $scope.featureList = [
       {
@@ -19,7 +19,7 @@ angular.module('sphereApp')
       {
         "title": "Analyze Your Bills",
         "desc": "Analyze your bills over time.\nSpending too much on Electricity?" +
-        "How much heating did you use in winter?",
+        " How much heating did you use in winter?",
         "img_src": "../images/index/AnalyzeIcon.png"
       },
       {
@@ -44,4 +44,9 @@ angular.module('sphereApp')
         "img_src": "../images/index/Oval_1_Shape.png"
       }
     ];
-  });
+    /*Scroll to section id*/
+    $scope.goToSection = function (section) {
+      $location.hash(section);
+      $anchorScroll();
+    };
+  }]);
