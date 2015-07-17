@@ -2,47 +2,48 @@
 
 <!--Intro-->
 <header class="intro">
-  <div class="intro-body">
-    <div class="container">
-      <div class="row">
+  <div class="container">
+    <div class="row">
 
-        <!--Left colummn-->
-        <div class="col-md-8">
-          <!--Logo-->
+      <!--Left colummn-->
+      <div class="col-md-8 col-sm-12 col-xs-12">
 
-          <div>
-            <img class="logo" src="../images/index/Logo1Temp.png">
-            <div class="title">
-              <span class="name">Sphere</span>
-              <span class="phrase">Bills. Made simple</span>
-            </div>
+        <!-- Padding to move Sphere down aside form smartphone -->
+        <div class="hidden-xs" style="height: 30vh;"></div>
+
+        <div>
+          <img class="logo" src="../images/index/Logo1Temp.png">
+          <div class="title">
+            <span class="name">Sphere</span>
+            <span class="phrase">Bills. Made simple</span>
           </div>
-
-          <!--Sign up form-->
-
-          <div class="col-md-8 col-md-offset-4" id="sign-up">
-            <label class="label-join-sphere">Be the first to get Sphere:</label>
-            <!-- Mailchimp Signup -->
-            <div mailchimp size="'sm'"></div>
-          </div>
-
         </div>
 
-        <div class="col-md-4 visible-md visible-lg">
-          <img id="iphone-img" src="../images/index/iPhoneTempMockup.png">
+        <!-- Padding to move signup down on smartphone -->
+        <div class="visible-xs" style="height: 30vh;"></div>
+
+        <div class="col-md-8 col-md-offset-4" id="sign-up">
+          <label class="label-join-sphere">Be the first to get Sphere:</label>
+          <!-- Mailchimp Signup -->
+          <div mailchimp size="'sm'"></div>
         </div>
+
       </div>
-<!--       <div class="row">
-        <div class="col-md-12"> -->
-          <div>
-            <a ng-click="goToSection('features')" class="btn btn-circle page-scroll">
-              <p id="scroll-down">Scroll down</p>
-              <img src="../images/index/ScrollDownIcon.png">
-            </a>
-          </div>
-<!--         </div>
-      </div> -->
+
+      <div class="col-md-4 hidden-sm hidden-xs">
+        <!-- Padding to move iPhone image down by screen height -->
+        <div class="hidden-xs" style="height: 20vh;"></div>
+        <img id="iphone-img" src="../images/index/iPhoneTempMockup.png">
+      </div>
     </div>
+
+    <div class="scroll">
+      <a ng-click="goToSection('features')" class="btn btn-circle page-scroll">
+        <p id="scroll-down">Scroll down</p>
+        <img src="../images/index/ScrollDownIcon.png">
+      </a>
+    </div>
+
   </div>
 </header>
 <!--Features-->
