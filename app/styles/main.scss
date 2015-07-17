@@ -23,9 +23,7 @@ body {
 
   /* 	Default shadow settings
 	two sets of shadows, both of them applied */
-  text-shadow: 0px 8px 17px rgba(0, 0, 0, 0.20);
-  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.50);
-
+//  text-shadow: 0px 8px 17px rgba(0, 0, 0, 0.20);
 }
 
 .browsehappy {
@@ -52,6 +50,7 @@ INTRO SECTION
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.50);
 }
 
 .intro .intro-body {
@@ -98,11 +97,8 @@ input#mce-EMAIL {
 
   /* SignUpButtonText: */
   opacity: 0.70;
-  font-family: Montserrat-Regular;
-  font-size: 11.47px;
   color: #FFFFFF;
   line-height: 14px;
-
 }
 
 #iphone-img {
@@ -142,21 +138,22 @@ FEATURES SECTION
 
 #features {
   /* Features: */
-  font-family: Montserrat-Bold;
+//  font-family: Montserrat-Bold;
+  font-weight: 700;
   font-size: 36px;
   color: #4A4A4A;
   line-height: 44px;
 }
 
 #feature .h3 {
-  font-family: Montserrat-Bold;
+  //font-family: Montserrat-Bold;
   font-size: 24px;
   color: #4A4A4A;
   line-height: 29px;
 }
 
 #features .caption {
-  font-family: OpenSans;
+  //font-family: OpenSans;
   font-size: 18px;
   color: #4A4A4A;
   line-height: 24px;
@@ -181,6 +178,7 @@ FOOTER
 #page-footer {
   min-height: 200px;
   background-color: #4B8EE6;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.50);
 }
 
 #page-footer a {
