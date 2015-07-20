@@ -11,6 +11,7 @@
 
         <div>
           <img class="logo" src="../images/index/Logo1Temp.png">
+
           <div class="title">
             <span class="name">Sphere</span>
             <span class="phrase">Bills. Made simple</span>
@@ -52,20 +53,34 @@
 
     <div class="row">
       <div class="thumbnail col-md-4 col-sm-6 col-xs-12" ng-repeat="feature in featureList">
-        <!-- <div class="thumbnail"> -->
-          <img ng-src="{{feature.img_src}}" >
+        <img ng-src="{{feature.img_src}}">
 
-          <div class="caption text-center">
-            <h3>{{feature.title}}</h3>
-            <p>{{feature.desc}}</p>
-          </div>
+        <div class="caption text-center">
+          <h3>{{feature.title}}</h3>
+
+          <p>{{feature.desc}}</p>
         </div>
-      <!-- </div> -->
+      </div>
     </div>
 
   </div>
 </section>
 
+<!--Sign up process-->
+<section id="section-sign-up">
+  <div class="container">
+    <h1>Signing up</h1>
+    <div class="row">
+      <div class="col-xs-12" >
+
+          <p><span class="glyphicon glyphicon-edit"></span> Register</p>
+          <p><span class="glyphicon glyphicon-plus"></span> Enter your utility information</p>
+          <p><span class="glyphicon glyphicon-list-alt"></span> View your bills</p>
+
+      </div>
+    </div>
+  </div>
+</section>
 <!-- Footer -->
 <footer id="page-footer" class="footer vertical-align">
   <hr>

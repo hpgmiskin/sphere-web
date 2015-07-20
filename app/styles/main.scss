@@ -189,6 +189,24 @@ FEATURES SECTION
 }
 
 /**********************************
+Sign-up process
+***********************************/
+#section-sign-up {
+  font-weight: 700;
+  font-size: 2em;
+  color: #4A4A4A;
+  line-height: 44px;
+}
+
+#section-sign-up p{
+  font-family: 'Open Sans', sans-serif;
+  font-size:1em;
+  color: #4A4A4A;
+  line-height: 24px;
+  margin-left: 5%;
+}
+
+/**********************************
 FOOTER
 ***********************************/
 
@@ -215,7 +233,7 @@ FOOTER
   padding: 10px;
 }
 
-/*Vertically align bootstrap cols inside a row*/
+/*Vertically align bootstrap cols elements inside a row*/
 .vertical-align {
   display: flex;
   align-items: center;
