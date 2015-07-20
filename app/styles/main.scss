@@ -23,7 +23,7 @@ body {
 
   /* 	Default shadow settings
 	two sets of shadows, both of them applied */
-//  text-shadow: 0px 8px 17px rgba(0, 0, 0, 0.20);
+  //  text-shadow: 0px 8px 17px rgba(0, 0, 0, 0.20);
 }
 
 .browsehappy {
@@ -77,7 +77,6 @@ INTRO SECTION
   min-width: 80px;
 }
 
-
 .title {
   position: relative;
   display: inline-block;
@@ -91,7 +90,7 @@ INTRO SECTION
   .phrase {
     font-size: 15px;
     position: absolute;
-    right:  0;
+    right: 0;
     bottom: -10px;
   }
 }
@@ -170,7 +169,6 @@ FEATURES SECTION
 
 #features {
   /* Features: */
-//  font-family: Montserrat-Bold;
   font-weight: 700;
   font-size: 36px;
   color: #4A4A4A;
@@ -178,7 +176,6 @@ FEATURES SECTION
 }
 
 #feature .h3 {
-  //font-family: Montserrat-Bold;
   font-size: 24px;
   color: #4A4A4A;
   line-height: 29px;
@@ -189,6 +186,25 @@ FEATURES SECTION
   font-size: small;
   color: #4A4A4A;
   line-height: 24px;
+}
+
+/**********************************
+Sign-up process
+***********************************/
+#section-sign-up {
+  font-weight: 700;
+  font-size: 2em;
+  color: #4A4A4A;
+  line-height: 44px;
+  margin: 5vh;
+}
+
+#section-sign-up p{
+  font-family: 'Open Sans', sans-serif;
+  font-size:1em;
+  color: #4A4A4A;
+  line-height: 24px;
+  margin-left: 5%;
 }
 
 /**********************************
@@ -208,7 +224,7 @@ FOOTER
 }
 
 #page-footer {
-  min-height: 200px;
+  height: 15em;
   background-color: #4B8EE6;
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.50);
 }
@@ -218,19 +234,26 @@ FOOTER
   padding: 10px;
 }
 
-#page-footer .col-md-5 {
-  margin-top: 5%;
+/*Vertically align bootstrap cols elements inside a row*/
+.vertical-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
 /*Vertical hr tag*/
-#divider {
-  background-color: #76CAFB;
-  //color: #76CAFB;
-
-  position: relative;
+#hr-divider {
   @include rotate(90);
+  background-color: #76CAFB;
+  border: 0;
+  border-top: 1px solid #eee;
 
-  width: 160px;
+  margin-top: 20%;
   padding-top: 1px;
-  top: 60px;
 }
+
+#page-footer .col-md-5 {
+  margin-bottom: 1em;
+}
+
