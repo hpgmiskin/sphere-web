@@ -107,6 +107,12 @@ INTRO SECTION
   }
 }
 
+@media(max-height: 300px) {
+  .hide-scroll {
+    display: none;
+  }
+}
+
 // Settings for desktop
 @media(min-width: 768px) {
   .title {
@@ -199,9 +205,9 @@ Sign-up process
   margin: 5vh;
 }
 
-#section-sign-up p{
+#section-sign-up p {
   font-family: 'Open Sans', sans-serif;
-  font-size:1em;
+  font-size: 1em;
   color: #4A4A4A;
   line-height: 24px;
   margin-left: 5%;
