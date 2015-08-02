@@ -263,3 +263,21 @@ FOOTER
   margin-bottom: 1em;
 }
 
+/*Remove href underline on hover*/
+.img-facebook:hover {
+  text-decoration: none;
+}
+
+/*FB image shadow*/
+.img-facebook img {
+  border-radius: 50%;
+  box-shadow: 0px 3px 8px #0A4592, inset 0px 2px 3px #FBF6F6;
+}
+
+/*White glow on hover*/
+.img-facebook:hover img {
+  -moz-box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
+}
+
